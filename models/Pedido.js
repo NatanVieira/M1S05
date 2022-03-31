@@ -14,6 +14,11 @@ export class Pedido {
     }
 
     mostraPedido(){
-        console.log(`Número pedido: ${this.numeroPedido}\nCliente: ${this.nomeCliente}\nData: ${this.dataPedido}\nPago? ${this.estaPago}\nProdutos: ${this.listaProdutos}`);
+        console.log(`Número pedido: ${this.numeroPedido}\nCliente: ${this.nomeCliente}\nData: ${this.dataPedido}\nPago? ${this.estaPago}\nProdutos:`);
+        this.listaProdutos.forEach((produto) => {console.log(produto)});
+    }
+    adicionarProduto(produto){
+        console.log(produto);
+        this.listaProdutos.push(produto);
     }
 }
