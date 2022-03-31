@@ -27,4 +27,16 @@ export class Pedido {
         });
         return total;
     }
+
+    mostraProdutos(){
+        console.log(`Pedido: ${this.numeroPedido}`);
+        this.listaProdutos.forEach((produto) => {
+            console.log(`Nome: ${produto.nome}\nPreço: ${produto.preco.toLocaleString()}\nQuantidade: ${produto.quantidade}\nEm estoque?: ${produto.emEstoque}`);
+        })
+    }
+    
+    mostraValorTotalPedido(){
+        let total = this.calcularTotal();
+        console.log(`Preço total do pedido: ${total}`);
+    }
 }

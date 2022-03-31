@@ -40,3 +40,11 @@ pedido1.calcularTotal();
 
 pedido2.mostraPedido();
 pedido2.calcularTotal();
+
+//Exercicio 8
+
+pedido1.mostraProdutos();
+pedido1.mostraValorTotalPedido();
+
+pedido2.mostraProdutos();
+pedido2.mostraValorTotalPedido();
