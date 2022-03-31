@@ -42,7 +42,6 @@ pedido2.mostraPedido();
 pedido2.calcularTotal();
 
 //Exercicio 8
-
 pedido1.mostraProdutos();
 pedido1.mostraValorTotalPedido();
 
