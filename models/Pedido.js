@@ -18,7 +18,13 @@ export class Pedido {
         this.listaProdutos.forEach((produto) => {console.log(produto)});
     }
     adicionarProduto(produto){
-        console.log(produto);
         this.listaProdutos.push(produto);
+    }
+    calcularTotal(){
+        let total = 0;
+        this.listaProdutos.forEach((produto) => {
+            total += (produto.quantidade * produto.preco);
+        });
+        return total;
     }
 }

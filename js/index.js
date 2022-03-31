@@ -14,3 +14,4 @@ pedido.mostraPedido();                //Exercicio 4
 
 pedido.adicionarProduto(produto); //Exercicio 5
 pedido.mostraPedido();            //Exercicio 5
+console.log(pedido.calcularTotal());
